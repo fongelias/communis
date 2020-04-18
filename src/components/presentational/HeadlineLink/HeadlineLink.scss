@@ -1,0 +1,32 @@
+@import 'scss/main.scss';
+
+.headlineLink {
+    text-decoration: none;
+    color: black;
+
+    h1 {
+        text-transform: uppercase;
+        display: inline;
+        position: relative;
+        font-family: $font-family;
+        font-size: $lg-font-size;
+    }
+
+    h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 3px;
+        right: calc(100%);
+        border: 2px solid rgba(0,0,0,0);
+    }
+
+    h1:hover::after {
+        content: "";
+        position: absolute;
+        left: 3px;
+        right: 2px;
+        border: 2px solid black;
+        transition: $easeInTransition;
+    }
+}

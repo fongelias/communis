@@ -69,6 +69,7 @@ export const FlexBox = ({
     alignContent,
 }: IFlexBoxProps) => (
     <div className={cx(
+        'flexBox',
         className,
         classNameFromFlexType(
             direction,
