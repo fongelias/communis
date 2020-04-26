@@ -1,8 +1,20 @@
 /*-- Colors -- */
+$black: #000000;
+$greyhound: #959595;
+$transparent: rgba(0,0,0,0);
 /*-- Typeography --*/
     /*-- Fonts --*/
     $font-family: 'Helvetica Neue', sans-serif;
     /*-- Sizing --*/
+    $xs-font-size: 14px;
+    $sm-font-size: 20px;
     $lg-font-size: 40px;
+    /*-- Color -- */
+    $link-text-color: $black;
+    $placeholder-text-color: $greyhound;
+/*-- Borders --*/
+    /*-- Color --*/
+    $link-border-color: $black;
+    $input-border-color: $black;
 /*-- Animation --*/
 $easeInTransition: ease-in 0.3s;
