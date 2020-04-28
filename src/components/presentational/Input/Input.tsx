@@ -21,13 +21,13 @@ export const Input = ({
 
     useEffect(() => {
         onChange(inputValue);
-    }, [inputValue]);
+    }, [onChange, inputValue]);
 
     return (
         <div className={cx(
             "input",
             {
-                hasValue: inputValue != ""
+                hasValue: inputValue !== ""
             }
         )}>
             <input
